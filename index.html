@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jredirect</title>
+    <meta name="description" content="Create Redirect Links" />
+    <link rel="icon" href="favicon.ico" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="jredirect" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="jredirect — Create Redirect Links" />
+    <meta property="og:description" content="Create Redirect Links" />
+    <meta property="og:url" content="https://xajiraqab.github.io/jredirect/" />
+    <meta property="og:image" content="/logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="jredirect — Create Redirect Links" />
+    <meta name="twitter:description" content="Create Redirect Links" />
+    <meta name="twitter:image" content="/logo.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <page id="pageCreateUrl">
+      <form>
+        <h3>CCR - Create, Copy, Redirect</h3>
+        <input
+          name="url"
+          placeholder="URL to redirect"
+          type="text"
+          inputmode="url"
+          autofocus
+        />
+        <footer>
+          <hehe:3></hehe:3>
+          <button id="btnSubmit">Create</button>
+        </footer>
+      </form>
+    </page>
+
+    <page id="pageShowResult">
+      <div style="display: flex; flex-direction: column; gap: 1rem">
+        <h3>Redirect URL Created Successfully</h3>
+        <input id="txtResult" />
+        <footer>
+          <button id="btnBack" type="button" class="secondary">Back</button>
+          <button id="btnCopy" type="button">Copy</button>
+        </footer>
+      </div>
+    </page>
+
+    <page id="pageRedirecting">
+      <h3>
+        <span id="lblRedirectTitle"></span>
+        <a id="linkRedirectingTo" href=""></a>
+      </h3>
+      <p id="lblRedirectTimer"></p>
+      <footer style="justify-content: center">
+        <button id="btnStopRedirecting" class="secondary">❌ Stop</button>
+      </footer>
+    </page>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
