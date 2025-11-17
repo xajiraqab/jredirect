@@ -17,7 +17,8 @@ export default class PageShowResult extends BasePage {
   show() {
     super.show()
     const encodedUrl =
-      window.location.origin + "?r=" + encodeURIComponent(this.ui.txtUrl.value)
+      `https://xajiraqab.github.io/jredirect?r=` +
+      encodeURIComponent(this.ui.txtUrl.value)
     this.ui.txtResult.value = encodedUrl
     this.ui.txtResult.select()
   }

@@ -59,7 +59,7 @@ export default class PageRedirecting extends BasePage {
 
     this.interval = setInterval(() => {
       if (currentIndex == this.listTime.length) {
-        // window.location.assign(this.redirectTo)
+        window.location.assign(this.redirectTo)
         clearInterval(this.interval)
         return
       }
